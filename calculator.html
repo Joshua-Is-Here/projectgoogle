@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <style type="text/css">
+
+.calculator {
+    position: relative;
+    top: -550px;
+    margin-left: 500px;
+    margin-right: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    max-width: 200px;
+    padding: 10px;
+    text-align: center;
+    }
+
+    .calculator input {
+      grid-column: span 4;
+      padding: 5px;
+      font-size: 16px;
+      text-align: right;
+    }
+
+    .calculator button {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .welcome {
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        top: -590px;
+    }
+        </style>
+    </head>
+    <body>
+        
+        <header>
+            <div class="container">
+                <div class="navbar">
+                    <img src="stick.png" class="logo">
+                    <nav>
+                        <ul id="menuList">
+                            <li><a href="index.html">Homepage</a></li>
+                            <li><a href="about-me.html">About Me</a></li>
+                            <li><a href="contact-me.html">Contact Me</a></li>
+                            <li><a href="calculator.html">Calculator</a></li>
+                            <li><a href="favorite-game.html">Gaming</a></li>
+                        </ul>
+                    </nav>
+                    <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+                </div> 
+        </header>
+        
+        <main>
+         
+         
+    <h1 class="welcome">Calculator</h1> 
+    
+    <div class="calculator">
+    <input type="text" id="result" disabled>
+
+    <button onclick="appendNumber(7)">7</button>
+    <button onclick="appendNumber(8)">8</button>
+    <button onclick="appendNumber(9)">9</button>
+    <button onclick="appendOperator('+')">+</button>
+
+    <button onclick="appendNumber(4)">4</button>
+    <button onclick="appendNumber(5)">5</button>
+    <button onclick="appendNumber(6)">6</button>
+    <button onclick="appendOperator('-')">-</button>
+
+    <button onclick="appendNumber(1)">1</button>
+    <button onclick="appendNumber(2)">2</button>
+    <button onclick="appendNumber(3)">3</button>
+    <button onclick="appendOperator('*')">x</button>
+
+    <button onclick="appendNumber(0)">0</button>
+    <button onclick="clearInput()">Del</button>
+    <button onclick="calculate()">=</button>
+    <button onclick="appendOperator('/')">/</button>
+  </div>
+  
+    <script>
+
+
+    
+    function appendNumber(number) {
+      document.getElementById('result').value += number;
+    }
+
+    function appendOperator(operator) {
+      document.getElementById('result').value += operator;
+    }
+
+    function clearInput() {
+      document.getElementById('result').value = '';
+    }
+
+    function calculate() {
+      const expression = document.getElementById('result').value;
+      const result = eval(expression);
+      document.getElementById('result').value = result;
+    }
+    
+        </script>
+
+    <div id="class-window">
+
+			<h2>Calculator V1.0</h2>
+			<ul id="class-list">
+			</ul>
+		</div>		
+        </main>
+        
+        <footer>
+            <h9>This website is for entertaining purposes. All rights to their respective owners.</h9>
+        </footer>
+    </body>
+</html>

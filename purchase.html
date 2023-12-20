@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchased</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="stick.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="about-me.html">About Me</a></li>
+                    <li><a href="contact-me.html">Contact Me</a></li>
+                    <li><a href="calculator.html">Calculator</a></li>
+                    <li><a href="favorite-game.html">Gaming</a></li>
+                </ul>
+            </nav>
+            <img src="menu.png" class="menu-icon">
+        </div>
+        
+         <div class="thanks">
+            <h4>Your purchase has been completed. Enjoy your RickRoll.</h4>
+         </div>
+        <div class="purchased">
+            <iframe width="960" height="415" src="https://www.youtube.com/embed/lhNpP7ttYoM?si=mBJsIMIt74WR62bh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <!--width: 960 height: 415-->
+
+        <div class="row">
+            <!-- Rest of your content in the .row section -->
+        </div>
+    </div>
+
+    <footer>
+        <p>This website is for entertaining purposes. All rights to their respective owners.</p>
+    </footer>
+
+    <script>
+
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px"
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>

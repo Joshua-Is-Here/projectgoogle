@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact Me</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<body>
+        <div class="container">
+            <div class="navbar">
+                <img src="stick.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="about-me.html">About Me</a></li>
+                        <li><a href="contact-me.html">Contact Me</a></li>
+						<li><a href="calculator.html">Calculator</a></li>
+						<li><a href="favorite-game.html">Gaming</a></li>
+                    </ul>
+                </nav>
+                <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+            </div>
+
+	<main>
+	    <div class="hero">
+	        <form action="https://formspree.io/f/mgebqeek" method="POST">
+			<span>Contact me!</span>
+			
+			<div id="input-field">
+			    <i class="bi bi-person"></i>
+			    <input type="text" placeholder="Name" name="Name">
+			</div>
+			
+			<div id="input-field">
+			    <i class="bi bi-telephone"></i>
+			    <input type="text" placeholder="Phone No." name="Phone">
+			</div>
+			
+			<div id="input-field">
+			    <i class="bi bi-envelope"></i>
+			    <input type="text" placeholder="Email Address" name="Email">
+			</div>
+			
+			<div id="input-field">
+			    <i class="bi bi-chat-right-dots"></i>
+			    <textarea name="Message" placeholder="Message" row="10"></textarea>
+			</div>
+			<input type="submit" value="Submit" class="send-btn">
+		</div>
+		</form>
+	</main>
+
+	<footer>
+        <h8>This website is for entertaining purposes. All rights to their respective owners.</h8>
+    </footer>
+
+</body>
+</html>
